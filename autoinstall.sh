@@ -4,6 +4,10 @@ echo "Executing commands ..."
 
 runcommand ()
 {
+#Fixing broken ubuntu dependencies for some cases 
+  sudo apt update
+  sudo apt upgrade
+  sudo apt --fix-broken install
 #Installing Ubuntu Gnome Desktop
   sudo apt install ubuntu-gnome-desktop -y
   echo "Installing Gnome - Complete"
@@ -22,7 +26,7 @@ runcommand ()
   echo "Installing Plank dock - Complete"
 #Restarting pulseaudio to fix audio
   pulseaudio --start
-#Updating Gnome and reinstalling CRD to fix any broken dependencies issue
+#Updating Gnome and reinstalling CRD to fix the broken input issue
   sudo apt autoremove -y
   sudo apt update
   sudo apt-get install chrome-remote-desktop
