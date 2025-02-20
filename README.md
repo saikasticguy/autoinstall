@@ -1,3 +1,3 @@
-# Autoinstall for Rshell
+# Autoinstall
 
-Automatically install GNOME and required supporting apps
+Automatically install GNOME or KDE Plasma and required supporting apps
