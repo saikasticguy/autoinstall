@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "Installing Redshell ..."
-
 runcommand ()
 {
 #Fixing broken ubuntu dependencies for some cases 
